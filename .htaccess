@@ -1,0 +1,8 @@
+SetEnv PHP_VER 5
+SetEnv REGISTER_GLOBALS 0
+
+RewriteEngine on
+RewriteBase  /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule  ^(.*)$ index.php?p=$1 [QSA,L]  

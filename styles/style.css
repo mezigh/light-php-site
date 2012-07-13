@@ -1,0 +1,168 @@
+/* FONT FACE */
+@font-face {
+        font-family: "Oswald";
+        src: url('../fonts/Oswald.ttf');
+}
+
+/* RESET CSS */
+*{outline:none;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+        outline: 0;
+}
+body {
+        line-height: 1;
+        color: black;
+        background: white;
+    font-family: 'Times New Roman',Times,serif;
+}
+ol, ul {
+        list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+        border-collapse: separate;
+        border-spacing: 0;
+}
+caption, th, td {
+        text-align: left;
+        font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: "";
+}
+blockquote, q {
+        quotes: "" "";
+}
+
+a{text-decoration:none;}
+
+
+
+
+/** BASES  **/
+
+body { height:100%;background-color:#b6a39c ; background-image:url("http://localhost/Serious_WebDev/hooboo/images/bg.jpg");background-repeat:no-repeat;font-family:"Oswald", sans-serif;}
+/*img{max-width:100%;}*/
+
+#pattern {position:absolute;top:0;left:0;z-index:-200;background:url("http://localhost/Serious_WebDev/hooboo/images/pattern.png") repeat; width:100% ; height:100%;}
+#wrapper{width:100%;height:100%;overflow:hidden;position:relative;}
+/*#wrapper{width:960px;margin:0 auto;overflow:hidden;background-color:rgba(79, 63, 58,.8);}*/
+/*#wrapper{width:960px;margin:0 auto;overflow:hidden;}*/
+
+
+
+
+#logo{float:left;width:250px;margin-left:20px;}
+#logo h1 {text-indent:-10000px;}
+#logo img {width:75%;}
+/*#logo a{ width:250px;margin-left:50px;font-size:3em; color :#fbe28c;}*/
+
+#header h1#titre_page{text-indent:-10000px;}
+
+.page_content {color:white;}
+
+/* MENU */
+
+#nav_menu{position:absolute;margin-left:20px;top:54px;left:204px;}
+#nav_menu ul li a{color:#a8854b;font-size:1.2em;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s;o-transition:.4s;}
+#nav_menu ul li a:hover ,#nav_menu ul li a.active{color:#c6bebb;}
+
+/* Page d'accueil MASONRY */
+
+.bloc {float:left;margin: 10px; }
+.bloc .info{display: none;}
+.bloc.unfold {height : 300px ; width: 600px;}
+.bloc.unfold .info{ display:block;background-color: #c6bebb;}
+.bloc.unfold .thumb{ display:none;}
+
+/* fin masonry */
+
+#header{  color:#FFF2C9;}
+
+#main_content{clear: both;}
+
+/*.page_content{background-color:rgba(79, 63, 58,.6);}*/
+
+/* page news */
+#news{color:#FFF2C9;margin-top:10px;background-color:rgba(37, 30, 27,.5);height:400px;
+        width:30%;overflow:auto;margin:auto 30%;border-radius:3px;-webkit-transition:.4s background-color ;-moz-transition:.4s background-color;transition:.4s background-color;o-transition:.4s background-color;}
+#news:hover{background-color:rgba(37, 30, 27,1);}
+#news ul{margin:10px;} 
+#news ul li.news_item { margin-left:10px;margin-top:10px;margin-bottom:10px; padding:10px;border-bottom: 1px dashed #FFF2C9;}
+#news ul li.news_item h3 {color:#a8854b;font-size:1.2em;} 
+#news ul li.news_item img {padding:4px;background-color:#FFF2C9;}
+
+/* page ambiance */
+
+
+
+/* page restaurant bar */
+#restaurant-bar{width:28%;}
+#restaurant-bar h2{font-size:1.4em;color:#FFF2C9;;}
+#restaurant-bar dl{color:#FFF2C9;}
+#restaurant-bar dt{color:#B6ADAA;background-color:rgba(37, 30, 27,.7);margin-left:5px;}
+#restaurant-bar dd{color:#D6CECB;margin-left:5px;}
+#restaurant-bar p{font-size:.8em;}
+/* page Music et Jazz */
+
+#music-jazz {color:#FFF2C9;margin-top:10px;background-color:rgba(37, 30, 27,.5);height:400px;
+        width:28%;overflow:auto;margin:auto 25%;border-radius:3px;-webkit-transition:.4s background-color ;-moz-transition:.4s background-color;transition:.4s background-color;o-transition:.4s background-color;}
+#music-jazz:hover{background-color:rgba(37, 30, 27,.9);}
+#music-jazz ul{margin:10px;}        
+#music-jazz ul li.prog_music { margin-left:10px;margin-bottom:10px; background-color:rgba(37, 30, 27,.5);padding:10px;}
+#music-jazz ul li.prog_music:hover { color:#a8854b; background-color:rgba(37, 30, 27,.8);}
+#music-jazz ul li.prog_music h2 {color:#AFA68E;margin-bottom: 10px;display:inline-block;}
+#music-jazz ul li.prog_music h3 {color:#B2AC80;display:inline-block;margin-left:20px;text-transform:uppercase;} 
+#music-jazz ul li.prog_music p{font-size:.8em;color:white;margin-bottom:10px;}
+#music-jazz ul li.prog_music span {color:gray;margin-left:150px;s} 
+
+/* page acces */
+#acces{margin:auto 25%;}
+#map_canvas { height: 100% ; }
+
+/* page contact */
+/* #contact{position:absolute;top:250px;margin:auto 25%;overflow:hidden;}*/
+/* #contact h2{ color:#4C3327;}*/
+#contact{margin:auto 30%;overflow:hidden;background-color:rgba(48, 39, 35,.6);-webkit-transition:.4s background-color ;-moz-transition:.4s background-color;transition:.4s background-color;o-transition:.4s background-color;}
+#contact:hover{background-color:rgba(48, 39, 35,.9);}
+p.contact{ color:#FFF;}
+#contact label {color:#B2AC80;}
+#contact input {display:block;background-color:#D9CA9F;color:#4C3327;border-radius:2px;margin:5px 0;font-size:1em;}
+#contact textarea{resize:none;display:block;margin-bottom: 20px;background-color:#D9CA9F;color:#4C3327;font-size:1.2em;border-radius:3px;}
+textarea,input[type=text],input[type=submit],input[type=password]{border:none;}
+input[type=submit]{cursor:pointer;margin:10px;}
+
+
+/* footer */
+/* footer{background-color:rgba(79, 63, 58,.7);position:fixed;height:50px;bottom:0px;left:0px;width:100%;}*/
+
+footer{background-color:rgba(79, 63, 58,.9);position:absolute;height:50px;bottom:0px;left:0px;width:100%;}
+#copyright{position: absolute;top:23px;right:50px;font-size:.6em;color:#a8854b;}
+#copyright:hover{color:#c6bebb;}
+
+#footer_menu{position: absolute;top:16px;margin-left:5%;}
+#footer_menu ul li{display:inline-block;margin-right:10px;}
+#footer_menu ul li a{text-transform:lowercase;color:#a8854b;font-size:.8em;-webkit-transition:.4s;-moz-transition:.4s;transition:.4s;o-transition:.4s;}
+#footer_menu ul li a:hover ,#footer_menu ul li a.active{color:#c6bebb;}
