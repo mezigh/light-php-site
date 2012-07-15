@@ -9,9 +9,9 @@
 
     
     <p class='contact'>Pour toute question, n'hésitez pas à nous contacter.</p><br/>
-    <p class='contact'>HOOBOO</p>
-    <p class='contact'>7 rue Neuve</p>
-    <p class='contact'>69001 Lyon</p>
+    <p class='contact'></p>
+    <p class='contact'></p>
+    <p class='contact'></p>
     <p class='contact'>Tel: YY YY YY YY YY</p> 
     <p class='contact'>Fax: FF FF FF FF FF</p>
     <br/>
